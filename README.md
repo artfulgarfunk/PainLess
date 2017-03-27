@@ -12,9 +12,12 @@ The purpose of this is to allow those who suffer with chronic conditions such as
 
 # Installation
 
-`git clone github.com/artfulgarfunk/final_project`
-
-Run `bundle install` in your terminal
+- Clone this repo
+- Run `bundle install` in the root directory
+- Run `bin/rake db:create` to create the database
+- Run `bin/rake db:migrate` to run the migrations
+- Run `bin/rails s` to run the server
+- Visit `http://localhost:3000` to view the app in your browser
 
 # Running
 `bin/rails s`
