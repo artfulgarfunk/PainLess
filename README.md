@@ -15,6 +15,7 @@ g# Getting started
 # Installation
 
 `git clone artfulgarfunk/final_project`
+
 `bundle install`
 
 # Running
