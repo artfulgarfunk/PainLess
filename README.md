@@ -10,13 +10,11 @@ An app that tracks environmental factors and returns data correlated with levels
 
 The purpose of this is to allow those who suffer with chronic conditions such as Arthritis and IBS to track their daily pain levels alongside environmental factors such as food and activities. This allows them to identify possible triggers for sudden flare ups - e.g. certain foods that may exacerbate their symptoms.
 
-g# Getting started
-
 # Installation
 
-`git clone artfulgarfunk/final_project`
+`git clone github.com/artfulgarfunk/final_project`
 
-`bundle install`
+Run `bundle install` in your terminal
 
 # Running
 `bin/rails s`
