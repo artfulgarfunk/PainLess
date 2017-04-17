@@ -8,7 +8,7 @@ An app that tracks environmental factors and returns data correlated with levels
 
 # Motivation
 
-The purpose of this is to allow those who suffer with chronic conditions such as Arthritis and IBS to track their daily pain levels alongside environmental factors such as food and activities. This allows them to identify possible triggers for sudden flare ups - e.g. certain foods that may exacerbate their symptoms.
+The purpose of this is to allow those who suffer with chronic conditions such as Arthritis and IBS to track their daily pain levels alongside environmental factors such as food and activities. This allows them to identify possible triggers for sudden flare ups - e.g. certain foods that may exacerbate their symptoms. In addition, users can access a log of all their inputs which can be exported to PDF, this can be shown to their GP to give a broad overview of their lifestyle and correlated pain. 
 
 # Installation
 
