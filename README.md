@@ -29,10 +29,10 @@ Run `rspec` in your terminal in the project folder
 
 # Screenshots
 
-![painless_1](http://i.imgur.com/ly9nn8s.png)
+![painless_1](http://imgur.com/tVgYI5L.png)
 
-![painless_2](http://i.imgur.com/iI8sXCp.png)
+![painless_2](http://imgur.com/cGhwx9C.png)
 
-![painless_3](http://i.imgur.com/Yg476GJ.png)
+![painless_3](http://imgur.com/LIXrehd.png)
 
-![painless_4](http://i.imgur.com/Asms1V0.png)
+![painless_4](http://imgur.com/H4GLF98.png)

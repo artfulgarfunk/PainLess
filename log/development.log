@@ -6983,3 +6983,64 @@ Processing by ResultsController#index as HTML
 Completed 200 OK in 98ms (Views: 64.1ms | ActiveRecord: 13.5ms)
 
 
+Started GET "/users/sign_up" for ::1 at 2017-04-18 09:04:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 50ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 09:04:02 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 463ms (Views: 459.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-04-18 09:08:49 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 2]]
+  Rendered painscores/new.html.haml within layouts/application (46.6ms)
+Completed 200 OK in 247ms (Views: 122.7ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/results" for ::1 at 2017-04-18 09:09:41 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (3.4ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 106ms (Views: 82.7ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 09:11:16 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 111ms (Views: 91.6ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-04-18 09:11:59 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (0.9ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (33.9ms)
+Completed 200 OK in 49ms (Views: 42.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-04-18 09:11:59 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (0.6ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (6.2ms)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
