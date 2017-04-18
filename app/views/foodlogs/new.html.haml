@@ -1,5 +1,5 @@
 = form_for Foodlog.new do |f|
-  %h1 Please enter your food here:
+  %h1 Please enter your food:
   = f.hidden_field :customdate, :value => params[:customdate]
   = f.label :food
   = f.text_field :food, :id => "Food"

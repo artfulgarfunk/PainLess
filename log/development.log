@@ -6039,3 +6039,438 @@ Processing by PainscoresController#new as HTML
 Completed 200 OK in 46ms (Views: 40.3ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for ::1 at 2017-04-18 07:31:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 484ms (Views: 459.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:31:25 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.5ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (58.3ms)
+Completed 200 OK in 166ms (Views: 119.8ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:32:04 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 87ms (Views: 77.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:35:03 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:35:17 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 60ms (Views: 56.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:35:32 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:35:40 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.7ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 71ms (Views: 65.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:35:56 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:36:12 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:36:23 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:36:33 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.6ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (45.7ms)
+Completed 200 OK in 127ms (Views: 108.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:36:38 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 103ms (Views: 98.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:36:48 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.5ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 64ms (Views: 58.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:36:54 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:37:22 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 58ms (Views: 53.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:37:34 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 52ms (Views: 46.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:37:59 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:38:07 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.2ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 57ms (Views: 50.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:38:17 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:38:27 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (37.1ms)
+Completed 200 OK in 101ms (Views: 90.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:38:34 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 80ms (Views: 75.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:38:42 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 93ms (Views: 88.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:38:54 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:39:33 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 112ms (Views: 107.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:40:27 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (22.4ms)
+Completed 200 OK in 107ms (Views: 101.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:40:49 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.2ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 125ms (Views: 120.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:41:34 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 76ms (Views: 70.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-18 07:41:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 84ms (Views: 69.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:41:58 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:42:12 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 85ms (Views: 80.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:42:25 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 68ms (Views: 63.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:42:43 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:42:51 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:43:35 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (42.7ms)
+Completed 200 OK in 139ms (Views: 123.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:43:41 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:43:48 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:43:56 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 81ms (Views: 76.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:44:04 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 84ms (Views: 80.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:47:16 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 82ms (Views: 76.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-04-18 07:47:45 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 1.3ms)
+
+

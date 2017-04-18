@@ -1,4 +1,4 @@
-%h1 Relation between exercise activity and painscores
+%h1 Relation between exertion and pain
 %h3{:class => "hidden", :id => "pains"}
   - if !@painscores.empty?
     - @painscores.each do |f|
@@ -69,7 +69,7 @@
         legend: {
             display: true,
             labels: {
-                fontColor: 'white'
+                fontColor: "black"
             }
         },
         scales: {
@@ -78,7 +78,7 @@
                 display: false,
             },
             ticks: {
-              fontColor: "white",
+              fontColor: "black",
             },
         }],
         yAxes: [{
@@ -86,7 +86,7 @@
                 display: false,
             },
             ticks: {
-              fontColor: "white",
+              fontColor: "black",
             },
         }],
             }

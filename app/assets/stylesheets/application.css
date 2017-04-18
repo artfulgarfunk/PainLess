@@ -42,12 +42,10 @@ font: weight size/line-height primary-font, fallback font
 /*
 the expanded margin properties grouped below are the same as the shorthand version just below it
 div{
-
 margin-top: 40px;
 margin-right: 60px;
 margin-bottom: 20px
 margin-left:10px;
-
 	margin: 40px 60px 20px 10px;
 }
 */
@@ -79,7 +77,6 @@ margin-left:10px;
 /*
 we can apply shadows (or glows) onto the outside of elements
 the order of the properties is:
-
 box shadow: x-offset y-offset blur radius spread-radius color
 default color is black
 */
@@ -90,13 +87,10 @@ default color is black
  	as well as declaring colors as hex values, we can also declare
  	them using rgb values (red, green and blue). these are numbers
  	that range from 0-255, and control the levels of the three colours
-
     we can take this further by using the rgba property, which allows
     us to also specify how opaque the colour should be (using a number between
     0-1)
-
     for example, rgba(0,255, 0, 0.5) would give us a 50% opaque green
-
  	*/
  	position: fixed;
 
@@ -114,7 +108,6 @@ its only as wide as its content, so we need to manually override this */
 /* when using fixed positioning, the element is taken outside of the normal flow
 of the page and onto its own layer, whcih also means these layers are stacked on
 top of each other
-
 by default, elements have a z-index of 1, so here we need to tell
 the header to force itself to the top layer to avoid anything else
 obstructing it from view */
@@ -298,12 +291,9 @@ a circular image */
 	4.(you'll need to write a new selector
 	   for this), but you'll need to restyle
 	   the links
-
 	   a. colour of #444
 		b.remove the underline
 		c. border on the bottom of 2px #444
-
-
 	*/
 
 background: url(../images/map.jpg) center;
