@@ -11618,3 +11618,244 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 2684ms (Views: 2677.4ms | ActiveRecord: 1.9ms)
 
 
+Started GET "/painscores/new" for ::1 at 2017-05-24 18:10:02 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (159.1ms)
+Completed 200 OK in 278ms (Views: 241.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:10:06 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (30.1ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 120ms (Views: 77.2ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:10:43 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.2ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (20.7ms)
+Completed 200 OK in 3061ms (Views: 3055.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:11:09 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.1ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 2719ms (Views: 2712.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:11:25 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (4.6ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 2777ms (Views: 2768.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:12:50 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.2ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 125ms (Views: 116.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:14:00 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.4ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 3615ms (Views: 3607.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:14:10 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 73ms (Views: 65.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:15:11 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (7.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 3833ms (Views: 3808.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:15:37 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.4ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (25.8ms)
+Completed 200 OK in 2793ms (Views: 2785.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:15:43 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:15:46 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.1ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 72ms (Views: 65.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:15:49 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (10.4ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 181ms (Views: 165.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:16:49 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.6ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 2964ms (Views: 2956.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:17:06 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (0.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 2825ms (Views: 2820.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:20:19 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.3ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 3370ms (Views: 3361.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:20:42 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 71ms (Views: 65.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:20:49 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 63ms (Views: 56.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:20:56 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.3ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 50ms (Views: 45.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:21:04 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.9ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 49ms (Views: 43.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:21:19 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (6.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 66ms (Views: 54.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:21:27 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.9ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 55ms (Views: 47.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:22:08 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 89ms (Views: 82.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:22:18 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (7.5ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 138ms (Views: 126.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:22:30 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (7.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 239ms (Views: 226.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:22:50 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (8.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 91ms (Views: 78.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:22:57 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.0ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 82ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:23:07 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (8.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 99ms (Views: 81.9ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:23:17 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.2ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 80ms (Views: 72.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 18:24:07 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.1ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 109ms (Views: 102.5ms | ActiveRecord: 2.1ms)
+
+

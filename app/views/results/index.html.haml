@@ -56,7 +56,8 @@
             legend: {
                 display: true,
                 labels: {
-                    fontColor: 'white'
+                    fontColor: 'black',
+                    fontSize: 20
                 }
             }
 
@@ -64,4 +65,4 @@
 
     });
   %br
-  = link_to '<button type="button">Home</button>'.html_safe, welcome_index_path
+  = link_to '<button type="button" class="btn btn-info btn-lg custom">Home</button>'.html_safe, welcome_index_path

@@ -63,9 +63,10 @@ input[type="submit"] {
   text-align: center;
 }
 .container-fluid{
-	max-width:960px;
-	margin: 0 auto;
-  color: black;
+	// max-width:960px;
+	// margin: 0 auto;
+  // color: black;
+  text-align: center;
 }
 
 .btn{
@@ -86,12 +87,12 @@ h2{
 .chart{
   max-width:500px;
   max-height:500px;
-  // text-align: left;
 }
 #canvass{
   // display:center-align;
   margin-left: 300px;
 }
+
 
 // a {
 //   color: black;
