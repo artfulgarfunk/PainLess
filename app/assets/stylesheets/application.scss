@@ -15,10 +15,42 @@
 
 
  @import "bootstrap";
- @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
+  font-family: 'Montserrat', sans-serif;
   background-image: url("bg2.jpg");
+}
+
+nav a{
+	color:#074ab7;
+	text-decoration: none;
+  text-align: center;
+  /*text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray,0 -1px gray;*/
+  /*text-outline: black*/
+/* this padding is worked out by taking the overall height of the header (76px), and taking away the height
+ of the header (76px), and taking away the height of the link
+ itself (20px), which leaves us with 56px/2 */
+
+	padding: 28px 20px;
+
+	/* this gives you the best of both properties, by allowing you to stack elements
+	alongside each other, and have them also respect the padding that's added to them */
+	display: inline-block;
+
+	/* this will transition all the properties that change over the course
+	of 0.3s, giving a subtle animation/transition */
+
+	transition: all 0.3s;
+}
+
+input[type="submit"] {
+
+	background-color: #C1C7C9;
+	color: #777777;
+	cursor: pointer;
+  width: 100%;
+  margin: 2px solid black;
 }
 
 .hidden {
@@ -27,21 +59,29 @@ body{
 .container{
 	max-width:960px;
 	margin: auto;
-  font-family: 'Baskerville Old Face';
+  font-family: 'Montserrat';
   text-align: center;
 }
 .container-fluid{
 	max-width:960px;
 	margin: 0 auto;
-  font-family: 'Baskerville Old Face';
   color: black;
 }
 
 .btn{
   padding: 20px;
   margin-bottom: 10%;
-  font-style: italic;
   font-weight: bold;
+  width: 100%;
+  color: black;
+}
+
+h2{
+  font-size: 1000%;
+}
+
+.custom {
+  width: 350px !important;
 }
 .chart{
   max-width:500px;
@@ -53,6 +93,8 @@ body{
   margin-left: 300px;
 }
 
-a{
-  color: black;
-}
+// a {
+//   color: black;
+//   display: block;
+//   width:150px;
+// }

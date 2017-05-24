@@ -1,4 +1,3 @@
-
 %div{:class => "container"}
   %nav
     - if user_signed_in?
@@ -6,11 +5,19 @@
         %h2 PainLess
         %h3 Your Pain Management App
         %br
-        %bu{:class => "btn btn-info btn-lg"}= link_to "Log Today's Data", new_painscore_path
-        %bu{:class => "btn btn-info btn-lg"}= link_to 'View Potential Trigger Foods', results_path
-        %bu{:class => "btn btn-info btn-lg"}= link_to 'View Exertion/Pain Relationship', pain_activity_index_path
-        %bu{:class => "btn btn-info btn-lg"}= link_to 'View All My Data', new_stat_path
-        %bu{:class => "btn btn-info btn-lg"}= link_to "Logout", destroy_user_session_path, method: :delete
+          =link_to '<button type="button" class="btn btn-info btn-lg custom">Log Today\'s Data</button>'.html_safe, new_painscore_path
+        %br
+          =link_to '<button type="button" class="btn btn-info btn-lg custom">View Potential Trigger Foods</button>'.html_safe, results_path
+        %br
+          =link_to '<button type="button" class="btn btn-info btn-lg custom">View All My Data</button>'.html_safe, pain_activity_index_path
+        %br
+          =link_to '<button type="button" class="btn btn-info btn-lg custom">View All My Data</button>'.html_safe, results_path
+        %br
+          =link_to '<button type="button" class="btn btn-info btn-lg custom">Logout</button>'.html_safe, destroy_user_session_path, method: :delete
+          -# %bu{:class => "btn btn-info btn-lg custom", :type =>"submit"}= link_to 'View Potential Trigger Foods', results_path
+          -# %bu{:class => "btn btn-info btn-lg custom", :role =>"button"}= link_to 'View Exertion/Pain Relationship', new_stat_path
+          -# %bu{:class => "btn btn-info btn-lg", :role =>"button"}= link_to 'View All My Data', new_stat_path
+          -# %bu{:class => "btn btn-info btn-lg", :role =>"button"}= link_to "Logout", destroy_user_session_path, method: :delete
     - else
       %div{:align => "center"}
         %nav{display:'inline-block;'}

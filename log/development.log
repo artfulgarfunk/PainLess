@@ -8975,3 +8975,2646 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 2611ms (Views: 2599.6ms | ActiveRecord: 7.0ms)
 
 
+Started GET "/results" for ::1 at 2017-05-24 15:55:52 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (31.3ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 136ms (Views: 94.9ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:55:55 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 85ms (Views: 56.9ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:56:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 50ms (Views: 46.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:56:32 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:57:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 177ms (Views: 169.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:57:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:58:41 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 129ms (Views: 124.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:58:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (16.6ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:9: syntax error, unexpected ':', expecting ')'
+s({}, nil, :type => "button" :class => "btn btn-info btn-lg"
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:9: syntax error, unexpected ')', expecting tSTRING_DEND
+lass => "btn btn-info btn-lg")}>#{_hamlout.adjust_tabs(1); _
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected ')'
+));}</bu>\n      <bu class='btn
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected ')'
+));}</bu>\n    </div>\n", -1, f
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+));}</bu>\n    </div>\n", -1, false); else
+                      ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.push_text("    <div align='center'>\n      <nav#{_hamlo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected $undefined
+ext("    <div align='center'>\n      <nav#{_hamlout.adjust_t
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+nil, display:'inline-block;')}>\n        <ul#{_hamlout.adjus
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:17: syntax error, unexpected '}', expecting tSTRING_DEND
+tyle => "list-style: none;"})}>\n          <li>#{_hamlout.ad
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</li>\n          <li>#{_hamlou
+    ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: syntax error, unexpected $undefined
+\n        </ul>\n      </nav>\n    </div>\n", -3, false);end
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: syntax error, unexpected $undefined
+;_hamlout.push_text("  </nav>\n</div>\n", -2, false);::Haml:
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: unterminated regexp meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:20: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/welcome/index.html.haml:9: syntax error, unexpected ':', expecting ')'
+app/views/welcome/index.html.haml:9: syntax error, unexpected ')', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:11: unknown regexp option - b
+app/views/welcome/index.html.haml:11: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:11: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:12: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:13: unknown regexp option - b
+app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:13: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:14: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:14: unknown regexp options - dv
+app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:15: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:17: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:19: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:20: unknown regexp option - l
+app/views/welcome/index.html.haml:20: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:20: unknown regexp options - av
+app/views/welcome/index.html.haml:20: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:20: unknown regexp options - av
+app/views/welcome/index.html.haml:20: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+app/views/welcome/index.html.haml:20: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:20: unterminated regexp meets end of file
+app/views/welcome/index.html.haml:20: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.4ms)
+Started GET "/" for ::1 at 2017-05-24 16:00:00 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (48.9ms)
+Completed 200 OK in 3391ms (Views: 3374.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:00:06 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 83ms (Views: 65.2ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:01:14 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (69.1ms)
+Completed 200 OK in 188ms (Views: 172.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:02:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (44.9ms)
+Completed 200 OK in 154ms (Views: 136.6ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:02:34 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (53.6ms)
+Completed 200 OK in 197ms (Views: 185.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:03:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (49.4ms)
+Completed 200 OK in 169ms (Views: 154.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:04:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 3304ms (Views: 3298.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:05:03 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 75ms (Views: 70.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:09:24 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (54.1ms)
+Completed 200 OK in 213ms (Views: 201.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:09:29 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 125ms (Views: 101.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:10:06 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 278ms (Views: 274.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:10:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 131ms (Views: 125.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:11:16 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:11:18 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 75ms (Views: 71.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:12:16 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (107.7ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+rue_false_true_false((:type => "button" =link_to "Log Today'
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected '=', expecting ')'
+rue_false((:type => "button" =link_to "Log Today's Data", ne
+                              ^):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+app/views/welcome/index.html.haml:8: syntax error, unexpected '=', expecting ')'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (129.6ms)
+Started GET "/" for ::1 at 2017-05-24 16:12:37 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+rue_false_true_false((:type => "button",link_to "Log Today's
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+true_false((:type => "button",link_to "Log Today's Data", ne
+                              ^):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+app/views/welcome/index.html.haml:8: syntax error, unexpected ',', expecting ')'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (22.5ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.0ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.1ms)
+Started GET "/" for ::1 at 2017-05-24 16:13:04 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 80ms (Views: 75.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/painscores/new" for ::1 at 2017-05-24 16:13:20 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/painscores/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [73 times] (51.4ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (184.0ms)
+Started POST "/painscores/new" for ::1 at 2017-05-24 16:13:26 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/painscores/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [73 times] (49.2ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (162.0ms)
+Started GET "/" for ::1 at 2017-05-24 16:14:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (77.0ms)
+Completed 200 OK in 292ms (Views: 262.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:14:15 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (31.6ms)
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:14:15 +0100
+Completed 200 OK in 134ms (Views: 104.1ms | ActiveRecord: 1.3ms)
+
+
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 93ms (Views: 72.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:16:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (67.2ms)
+Completed 200 OK in 218ms (Views: 200.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:16:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 100ms (Views: 88.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/painscores/new" for ::1 at 2017-05-24 16:16:51 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/painscores/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered collection of /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [73 times] (33.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.4ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (171.4ms)
+Started GET "/painscores/log" for ::1 at 2017-05-24 16:17:01 +0100
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PainscoresController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.0ms)
+Started GET "/" for ::1 at 2017-05-24 16:17:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:18:34 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (18.7ms)
+Completed 200 OK in 4501ms (Views: 4483.9ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/painscores/new" for ::1 at 2017-05-24 16:18:44 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/painscores/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered collection of /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [73 times] (32.3ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.2ms)
+Started GET "/" for ::1 at 2017-05-24 16:18:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 2921ms (Views: 2915.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/painscores/new" for ::1 at 2017-05-24 16:19:00 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/painscores/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered collection of /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [73 times] (49.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (240.9ms)
+Started GET "/" for ::1 at 2017-05-24 16:20:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (41.9ms)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected '=', expecting ')'
+lass => "btn btn-info btn-lg"= button_to "Log Today's Data",
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+y's Data", new_painscore_path)}></button>\n      <bu class='
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+));}</bu>\n      <bu class='btn
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+));}</bu>\n    </div>\n", -1, f
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+));}</bu>\n    </div>\n", -1, false); else
+                      ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.push_text("    <div align='center'>\n      <nav#{_hamlo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+ext("    <div align='center'>\n      <nav#{_hamlout.adjust_t
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+nil, display:'inline-block;')}>\n        <ul#{_hamlout.adjus
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+tyle => "list-style: none;"})}>\n          <li>#{_hamlout.ad
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</li>\n          <li>#{_hamlou
+    ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+\n        </ul>\n      </nav>\n    </div>\n", -3, false);end
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+;_hamlout.push_text("  </nav>\n</div>\n", -2, false);::Haml:
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected '=', expecting ')'
+app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:10: unknown regexp option - b
+app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:12: unknown regexp option - b
+app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:13: unknown regexp options - dv
+app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:19: unknown regexp option - l
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.9ms)
+Started GET "/" for ::1 at 2017-05-24 16:20:24 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+ass => "btn btn-info btn-lg"=> button_to "Log Today's Data",
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+y's Data", new_painscore_path)}></button>\n      <bu class='
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+));}</bu>\n      <bu class='btn
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+));}</bu>\n    </div>\n", -1, f
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+));}</bu>\n    </div>\n", -1, false); else
+                      ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.push_text("    <div align='center'>\n      <nav#{_hamlo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+ext("    <div align='center'>\n      <nav#{_hamlout.adjust_t
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+nil, display:'inline-block;')}>\n        <ul#{_hamlout.adjus
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+tyle => "list-style: none;"})}>\n          <li>#{_hamlout.ad
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</li>\n          <li>#{_hamlou
+    ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+\n        </ul>\n      </nav>\n    </div>\n", -3, false);end
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+;_hamlout.push_text("  </nav>\n</div>\n", -2, false);::Haml:
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:10: unknown regexp option - b
+app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:12: unknown regexp option - b
+app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:13: unknown regexp options - dv
+app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:19: unknown regexp option - l
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.6ms)
+Started GET "/" for ::1 at 2017-05-24 16:21:00 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+ass => "btn btn-info btn-lg"=> :type =>"button" =link_to "Lo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected '=', expecting tSTRING_DEND
+o btn-lg"=> :type =>"button" =link_to "Log Today's Data", ne
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+y's Data", new_painscore_path)}></button>\n      <bu class='
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+));}</bu>\n      <bu class='btn
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+));}</bu>\n    </div>\n", -1, f
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+));}</bu>\n    </div>\n", -1, false); else
+                      ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.push_text("    <div align='center'>\n      <nav#{_hamlo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+ext("    <div align='center'>\n      <nav#{_hamlout.adjust_t
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+nil, display:'inline-block;')}>\n        <ul#{_hamlout.adjus
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+tyle => "list-style: none;"})}>\n          <li>#{_hamlout.ad
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</li>\n          <li>#{_hamlou
+    ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+\n        </ul>\n      </nav>\n    </div>\n", -3, false);end
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+;_hamlout.push_text("  </nav>\n</div>\n", -2, false);::Haml:
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+app/views/welcome/index.html.haml:8: syntax error, unexpected '=', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:10: unknown regexp option - b
+app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:12: unknown regexp option - b
+app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:13: unknown regexp options - dv
+app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:19: unknown regexp option - l
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.8ms)
+Started GET "/" for ::1 at 2017-05-24 16:21:12 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+ass => "btn btn-info btn-lg"=> :type =>"button")}>#{_hamlout
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+fo btn-lg"=> :type =>"button")}>#{_hamlout.adjust_tabs(1); _
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+));}</bu>\n      <bu class='btn
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+));}</bu>\n    </div>\n", -1, f
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+));}</bu>\n    </div>\n", -1, false); else
+                      ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.push_text("    <div align='center'>\n      <nav#{_hamlo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+ext("    <div align='center'>\n      <nav#{_hamlout.adjust_t
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+nil, display:'inline-block;')}>\n        <ul#{_hamlout.adjus
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+tyle => "list-style: none;"})}>\n          <li>#{_hamlout.ad
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+));}</li>\n          <li>#{_hamlou
+    ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+\n        </ul>\n      </nav>\n    </div>\n", -3, false);end
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+;_hamlout.push_text("  </nav>\n</div>\n", -2, false);::Haml:
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected =>, expecting ')'
+app/views/welcome/index.html.haml:8: syntax error, unexpected ')', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:10: unknown regexp option - b
+app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:12: unknown regexp option - b
+app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:13: unknown regexp options - dv
+app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting tSTRING_DEND
+app/views/welcome/index.html.haml:19: unknown regexp option - l
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.3ms)
+Started GET "/" for ::1 at 2017-05-24 16:21:25 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 91ms (Views: 86.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:21:39 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:23:29 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (27.5ms)
+Completed 200 OK in 145ms (Views: 137.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:23:37 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 94ms (Views: 72.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 16:23:41 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (14.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 91ms (Views: 71.9ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:23:44 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (25.1ms)
+Completed 200 OK in 114ms (Views: 97.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:24:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 77ms (Views: 67.1ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:24:09 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 86ms (Views: 71.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:25:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 69ms (Views: 65.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:26:27 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:8: syntax error, unexpected '\n', expecting '='
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+));}</bu>\n      <bu class='btn
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: unknown regexp option - b
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+));}</bu>\n      <bu class='btn btn-info
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}</bu>\n      <bu class='btn btn-info btn-lg'>#{_haml
+                          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+));}</bu>\n    </div>\n", -1, f
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+));}</bu>\n    </div>\n", -1, false); else
+                      ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+lout.push_text("    <div align='center'>\n      <nav#{_hamlo
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+ext("    <div align='center'>\n      <nav#{_hamlout.adjust_t
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting ')'
+nil, display:'inline-block;')}>\n        <ul#{_hamlout.adjus
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting ')'
+tyle => "list-style: none;"})}>\n          <li>#{_hamlout.ad
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting ')'
+));}</li>\n          <li>#{_hamlou
+    ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+\n        </ul>\n      </nav>\n    </div>\n", -3, false);end
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unknown regexp options - av
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+;_hamlout.push_text("  </nav>\n</div>\n", -2, false);::Haml:
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/welcome/index.html.haml:8: syntax error, unexpected '\n', expecting '='
+app/views/welcome/index.html.haml:10: unknown regexp option - b
+app/views/welcome/index.html.haml:10: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:10: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:11: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:12: unknown regexp option - b
+app/views/welcome/index.html.haml:12: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:12: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:13: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:13: unknown regexp options - dv
+app/views/welcome/index.html.haml:13: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:14: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.haml:14: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:15: syntax error, unexpected '}', expecting ')'
+app/views/welcome/index.html.haml:16: syntax error, unexpected '}', expecting ')'
+app/views/welcome/index.html.haml:18: syntax error, unexpected '}', expecting ')'
+app/views/welcome/index.html.haml:19: unknown regexp option - l
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unknown regexp options - av
+app/views/welcome/index.html.haml:19: unmatched close parenthesis: /div>\n", -3, false);end;_hamlout.push_text("  </
+app/views/welcome/index.html.haml:19: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:19: unterminated regexp meets end of file
+app/views/welcome/index.html.haml:19: syntax error, unexpected end-of-input, expecting ')'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.5ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.4ms)
+Started GET "/" for ::1 at 2017-05-24 16:26:42 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:26:57 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 50ms (Views: 46.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:27:16 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 70ms (Views: 66.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:29:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 71ms (Views: 66.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:30:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 2929ms (Views: 2925.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:30:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 3121ms (Views: 3116.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:31:03 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 2741ms (Views: 2736.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:31:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 2834ms (Views: 2829.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:32:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 2836ms (Views: 2832.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:32:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 2816ms (Views: 2812.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:33:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:35:43 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 3477ms (Views: 3470.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:35:57 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 3188ms (Views: 3183.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:36:21 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 3060ms (Views: 3057.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:36:39 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 2574ms (Views: 2571.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:39:56 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (33.6ms)
+Completed 200 OK in 3392ms (Views: 3381.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:40:50 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:43:01 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 98ms (Views: 86.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:43:01 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 86ms (Views: 81.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:48:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (46.4ms)
+Completed 200 OK in 165ms (Views: 144.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:48:39 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (18.8ms)
+Completed 200 OK in 81ms (Views: 55.0ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:49:08 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:49:16 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (20.7ms)
+Completed 200 OK in 73ms (Views: 61.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:50:42 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 73ms (Views: 64.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:50:46 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 99ms (Views: 80.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:50:53 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 201ms (Views: 190.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:52:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (49.1ms)
+Completed 200 OK in 199ms (Views: 185.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 16:52:23 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (11.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 119ms (Views: 99.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:52:29 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 87ms (Views: 59.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-05-24 16:52:33 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (22.1ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (10.7ms)
+Completed 200 OK in 46ms (Views: 18.2ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-05-24 16:52:33 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (2.7ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (12.0ms)
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:52:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (20.2ms)
+Completed 200 OK in 91ms (Views: 81.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:53:24 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:53:28 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 77ms (Views: 57.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:53:59 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:56:09 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %bu and nested within it.):
+    11:           %bu{:class => "btn btn-info btn-lg", :role =>"button"}= link_to 'View Exertion/Pain Relationship', pain_activity_index_path
+    12:           %bu{:class => "btn btn-info btn-lg", :role =>"button"}= link_to 'View All My Data', new_stat_path
+    13:           %bu{:class => "btn btn-info btn-lg", :role =>"button"}= link_to "Logout", destroy_user_session_path, method: :delete
+    14:             =link_to '<button type="button">TEST</button>'.html_safe, new_painscore_path
+    15: 
+    16:     - else
+    17:       %div{:align => "center"}
+  
+app/views/welcome/index.html.haml:14
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.3ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.4ms)
+Started GET "/" for ::1 at 2017-05-24 16:56:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 156ms (Views: 150.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:58:03 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:58:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:58:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 16:58:37 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 77ms (Views: 53.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 16:58:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:00:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:04:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "/painscores/new":String):
+    16:             =link_to '<button type="button">TEST</button>'.html_safe, new_painscore_path
+    17: 
+    18:           .btn btn-info btn-lg
+    19:           = button_to 'ANOTHER TEST', "Log Today's Data", new_painscore_path
+    20:     - else
+    21:       %div{:align => "center"}
+    22:         %nav{display:'inline-block;'}
+  
+app/views/welcome/index.html.haml:19:in `_app_views_welcome_index_html_haml__3435804365901093875_70254211697320'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.4ms)
+Started GET "/" for ::1 at 2017-05-24 17:04:39 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    16:             =link_to '<button type="button">TEST</button>'.html_safe, new_painscore_path
+    17: 
+    18:           .btn btn-info btn-lg
+    19:             =button_to 'ANOTHER TEST', "Log Today's Data", new_painscore_path
+    20:     - else
+    21:       %div{:align => "center"}
+    22:         %nav{display:'inline-block;'}
+  
+app/views/welcome/index.html.haml:19
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.2ms)
+Started GET "/" for ::1 at 2017-05-24 17:05:20 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    16:             =link_to '<button type="button">TEST</button>'.html_safe, new_painscore_path
+    17: 
+    18:           .btn btn-info btn-lg
+    19:             =button_to "Log Today's Data", new_painscore_path
+    20:     - else
+    21:       %div{:align => "center"}
+    22:         %nav{display:'inline-block;'}
+  
+app/views/welcome/index.html.haml:19
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.1ms)
+Started GET "/" for ::1 at 2017-05-24 17:05:23 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    16:             =link_to '<button type="button">TEST</button>'.html_safe, new_painscore_path
+    17: 
+    18:           .btn btn-info btn-lg
+    19:             =button_to "Log Today's Data", new_painscore_path
+    20:     - else
+    21:       %div{:align => "center"}
+    22:         %nav{display:'inline-block;'}
+  
+app/views/welcome/index.html.haml:19
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.8ms)
+Started GET "/" for ::1 at 2017-05-24 17:05:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    16:             =link_to '<button type="button">TEST</button>'.html_safe, new_painscore_path
+    17: 
+    18:           .btn btn-info btn-lg
+    19:             = button_to "Log Today's Data", new_painscore_path
+    20:     - else
+    21:       %div{:align => "center"}
+    22:         %nav{display:'inline-block;'}
+  
+app/views/welcome/index.html.haml:19
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.8ms)
+Started GET "/" for ::1 at 2017-05-24 17:05:43 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 73ms (Views: 69.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:06:04 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/painscores/new" for ::1 at 2017-05-24 17:06:11 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/painscores/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered collection of /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [73 times] (26.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (176.8ms)
+Started GET "/" for ::1 at 2017-05-24 17:06:37 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:08:57 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:09:00 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 83ms (Views: 63.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:09:14 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 91ms (Views: 72.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:09:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:09:39 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:09:43 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 130ms (Views: 116.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:10:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 75ms (Views: 72.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:11:09 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:12:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 123ms (Views: 119.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:12:59 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 93ms (Views: 72.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:13:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:18:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (52.6ms)
+Completed 200 OK in 180ms (Views: 166.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:20:27 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 94ms (Views: 87.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:21:45 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:28: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/welcome/index.html.haml:28: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.7ms)
+Started GET "/" for ::1 at 2017-05-24 17:22:18 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (71.2ms)
+Completed 200 OK in 145ms (Views: 140.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:22:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 126ms (Views: 115.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:23:07 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 104ms (Views: 98.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:23:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 76ms (Views: 71.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:23:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 79ms (Views: 75.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 17:23:58 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (6.6ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 86ms (Views: 71.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 17:24:02 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.2ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 154ms (Views: 146.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:24:54 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:18: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+Trigger Foods', results_path :role =>"button"
+                              ^):
+  
+app/views/welcome/index.html.haml:18: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.4ms)
+Started GET "/" for ::1 at 2017-05-24 17:25:08 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 174ms (Views: 170.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 17:25:11 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (0.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 87ms (Views: 69.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:26:00 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:26:48 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 55ms (Views: 51.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:27:51 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 100ms (Views: 80.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:29:41 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 91ms (Views: 86.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:29:48 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 135ms (Views: 95.1ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:29:51 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (21.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (43.2ms)
+Completed 200 OK in 167ms (Views: 127.5ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:30:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:30:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+n btn-info btn-lg">Log Today's Data</button>'.html_safe, new
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: unknown regexp options - br
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: unmatched close parenthesis: /button>'.html_safe, new_painscore_path
+));}\n      </
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:16: syntax error, unexpected $undefined
+));}\n      </br>\n    </div>\n", -2, false);
+                  ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:22: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:22: syntax error, unexpected $undefined
+));}</li>\n          <li>#{_hamlout.adju
+          ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: syntax error, unexpected ')'
+));}</li>\n        </ul>\n     
+ ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: unknown regexp option - l
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: syntax error, unexpected $undefined
+));}</li>\n        </ul>\n      </nav>\n    </div>\n", 
+                         ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: syntax error, unexpected $undefined
+ul>\n      </nav>\n    </div>\n", -3, false);end;_hamlout.pu
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: unknown regexp options - dv
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: syntax error, unexpected $undefined
+t.push_text("  </nav>\n</div>\n", -2, false);::Haml::Util.ht
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: unterminated string meets end of file
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:23: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/welcome/index.html.haml:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/welcome/index.html.haml:16: unknown regexp options - br
+app/views/welcome/index.html.haml:16: unmatched close parenthesis: /button>'.html_safe, new_painscore_path
+app/views/welcome/index.html.haml:16: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:22: unknown regexp option - l
+app/views/welcome/index.html.haml:22: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:23: syntax error, unexpected ')'
+app/views/welcome/index.html.haml:23: unknown regexp option - l
+app/views/welcome/index.html.haml:23: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:23: unknown regexp options - dv
+app/views/welcome/index.html.haml:23: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:23: unknown regexp options - dv
+app/views/welcome/index.html.haml:23: syntax error, unexpected $undefined
+app/views/welcome/index.html.haml:23: unterminated string meets end of file
+app/views/welcome/index.html.haml:23: syntax error, unexpected end-of-input, expecting ')'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.6ms)
+Started GET "/" for ::1 at 2017-05-24 17:31:02 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:31:05 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 80ms (Views: 66.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 17:31:09 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 79ms (Views: 67.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:31:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/welcome/index.html.haml:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.0ms)
+Started GET "/" for ::1 at 2017-05-24 17:31:41 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 72ms (Views: 68.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:39:36 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (59.3ms)
+Completed 200 OK in 200ms (Views: 186.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:41:21 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: unknown type of %string
+_false_true_false((link_to %div{:class => "btn btn-info btn-
+                              ^
+/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:10: syntax error, unexpected end-of-input, expecting ')'
+_false_true_false((link_to %div{:class => "btn btn-info btn-
+                              ^):
+  
+app/views/welcome/index.html.haml:10: unknown type of %string
+app/views/welcome/index.html.haml:10: syntax error, unexpected end-of-input, expecting ')'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.7ms)
+Started GET "/" for ::1 at 2017-05-24 17:42:16 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (32.4ms)
+Completed 200 OK in 134ms (Views: 124.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:43:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 90ms (Views: 85.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:44:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 135ms (Views: 124.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:44:56 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/welcome/index.html.haml:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.8ms)
+Started GET "/" for ::1 at 2017-05-24 17:45:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:24: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/welcome/index.html.haml:24: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.5ms)
+Started GET "/" for ::1 at 2017-05-24 17:45:50 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:24: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/welcome/index.html.haml:24: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.8ms)
+Started GET "/" for ::1 at 2017-05-24 17:45:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    2:   %nav
+    3:     - if user_signed_in?
+    4:       %div{:class => "btn-group-vertical"}
+    5:           =link_to '<button type="button" class="btn btn-info btn-lg">Log Today\'s Data</button>'.html_safe, new_painscore_path
+    6:           =link_to '<button type="button" class="btn btn-info btn-lg">View Potential Trigger Foods</button>'.html_safe, results_path
+    7:           =link_to '<button type="button" class="btn btn-info btn-lg">View All My Data</button>'.html_safe, pain_activity_index_path
+    8:           =link_to '<button type="button" class="btn btn-info btn-lg">View All My Data</button>'.html_safe, results_path
+  
+app/views/welcome/index.html.haml:5
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.5ms)
+Started GET "/" for ::1 at 2017-05-24 17:46:08 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/admin030815/Projects/lesspain/PainLess/app/views/welcome/index.html.haml:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/welcome/index.html.haml:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (153.4ms)
+Started GET "/" for ::1 at 2017-05-24 17:46:14 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 77ms (Views: 72.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:46:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:46:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 68ms (Views: 63.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:48:45 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (35.3ms)
+Completed 200 OK in 146ms (Views: 139.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:49:02 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 80ms (Views: 75.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 17:49:11 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (15.6ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 79ms (Views: 57.9ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:50:06 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 71ms (Views: 67.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 17:50:10 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (9.4ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 89ms (Views: 75.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:51:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 3491ms (Views: 3486.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:52:07 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (49.7ms)
+Completed 200 OK in 3513ms (Views: 3508.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:52:20 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 2774ms (Views: 2770.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:52:37 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 2800ms (Views: 2795.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:53:00 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 3076ms (Views: 3070.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:53:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 2658ms (Views: 2654.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:53:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 3019ms (Views: 3014.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:56:00 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (41.9ms)
+Completed 200 OK in 3046ms (Views: 3037.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:56:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 70ms (Views: 64.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:57:59 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 3022ms (Views: 3017.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 17:59:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 110ms (Views: 105.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:00:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 83ms (Views: 78.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:00:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 55ms (Views: 50.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:00:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 18:01:00 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 98ms (Views: 78.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:01:21 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 66ms (Views: 62.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:01:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 2947ms (Views: 2942.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:02:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 3096ms (Views: 3092.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:02:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 2952ms (Views: 2948.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:03:17 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 2863ms (Views: 2858.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:04:09 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 2775ms (Views: 2771.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:06:49 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (43.9ms)
+Completed 200 OK in 4220ms (Views: 4209.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:07:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 2700ms (Views: 2696.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:07:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 2914ms (Views: 2909.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:08:16 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 2910ms (Views: 2904.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:08:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 2868ms (Views: 2864.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 18:08:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 2684ms (Views: 2677.4ms | ActiveRecord: 1.9ms)
+
+
