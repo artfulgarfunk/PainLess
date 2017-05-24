@@ -14,6 +14,7 @@ gem 'rails', '~> 5.0.2'
 gem 'haml'
 gem 'launchy'
 gem 'devise'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'

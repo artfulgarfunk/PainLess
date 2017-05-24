@@ -10,15 +10,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
  */
+ @import "bootstrap";
  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
 
 body{
 /* its always best to set up the fonts for the whole page first */
 
-  text-align:center;
+  // text-align:center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
@@ -60,10 +60,10 @@ margin-left:10px;
 .chart{
   max-width:500px;
   max-height:500px;
-  text-align: center;
+  // text-align: left;
 }
 #canvass{
-  display:center;
+  // display:center-align;
   margin-left: 300px;
 }
 
@@ -114,16 +114,16 @@ obstructing it from view */
 
  }
 
-h1{
-	padding: 20px 0;
-  text-align: center;
-}
-nav {
-  text-align: center;
-}
-label {
-  text-align: center;
-}
+// h1{
+// 	padding: 20px 0;
+//   text-align: center;
+// }
+// nav {
+//   text-align: center;
+// }
+// label {
+//   text-align: center;
+// }
 
 nav a{
 	color:#074ab7;
@@ -234,7 +234,7 @@ spilling outside of the section is now hidden */
 
 h3 {
 	font-size: 25px;
-  text-align: center;
+  // text-align: center;
 	/*margin-top:30px;
 	margin-bottom: 5px;*/
 }

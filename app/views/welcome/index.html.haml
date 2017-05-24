@@ -1,15 +1,16 @@
 
-%div{:align => "center"}
-  %nav{display:'inline-block;'}
+%div{:class => "container-fluid"}
+  %nav
     - if user_signed_in?
       %ul{{:style => "list-style: none;"}}
         %h2 PainLess
         %h3 Your Pain Management App
-        %li= link_to "Log Today's Data", new_painscore_path
-        %li= link_to 'View Potential Trigger Foods', results_path
-        %li= link_to 'View Exertion/Pain Relationship', pain_activity_index_path
-        %li= link_to 'View All My Data', new_stat_path
-        %li= link_to "Logout", destroy_user_session_path, method: :delete
+        %bu{:class => "btn btn-info"}= link_to "Log Today's Data", new_painscore_path
+        %br
+        %bu{:class => "btn btn-info"}= link_to 'View Potential Trigger Foods', results_path
+        %bu{:class => "btn btn-info"}= link_to 'View Exertion/Pain Relationship', pain_activity_index_path
+        %bu{:class => "btn btn-info"}= link_to 'View All My Data', new_stat_path
+        %bu{:class => "btn btn-info"}= link_to "Logout", destroy_user_session_path, method: :delete
     - else
       %div{:align => "center"}
         %nav{display:'inline-block;'}
