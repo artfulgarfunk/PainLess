@@ -1,17 +1,18 @@
-= form_for Foodlog.new do |f|
-  %h1 Please enter your food:
-  = f.hidden_field :customdate, :value => params[:customdate]
-  = f.label :food
-  = f.text_field :food, :id => "Food"
-  = f.submit "Add Food"
+%div{:class => "container"}
+  = form_for Foodlog.new do |f|
+    %h1 Please enter your food:
+    = f.hidden_field :customdate, :value => params[:customdate]
+    = f.label :food
+    = f.text_field :food, :id => "Food"
+    = f.submit "Add Food"
 
-- if @foodlogs.any?
-  - @foodlogs.each do |f|
-    %h3{:align => "center"}= f.customdate
-    %h3= f.food
-    .delete
-    = button_to 'Delete', foodlog_path(f), method: :delete
-  = link_to '<button type="button">Next</button>'.html_safe, new_activity_path(customdate: params[:customdate]), :id => 'next'
+  - if @foodlogs.any?
+    - @foodlogs.each do |f|
+      %h3{:align => "center"}= f.customdate
+      %h3= f.food
+      .delete
+      = button_to 'Delete', foodlog_path(f), method: :delete
+    = link_to '<button type="button">Next</button>'.html_safe, new_activity_path(customdate: params[:customdate]), :id => 'next'
 
-- else
-  %h3 No Food Logged Yet
+  - else
+    %h3 No Food Logged Yet

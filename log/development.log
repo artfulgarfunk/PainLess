@@ -8148,3 +8148,830 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 91ms (Views: 85.6ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:49:15 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (36.0ms)
+Completed 500 Internal Server Error in 390ms (ActiveRecord: 6.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'text/css'
+Checked in these paths: 
+  /Users/admin030815/Projects/lesspain/PainLess/app/assets/config
+  /Users/admin030815/Projects/lesspain/PainLess/app/assets/images
+  /Users/admin030815/Projects/lesspain/PainLess/app/assets/javascripts
+  /Users/admin030815/Projects/lesspain/PainLess/app/assets/stylesheets
+  /Users/admin030815/Projects/lesspain/PainLess/vendor/assets/javascripts
+  /Users/admin030815/Projects/lesspain/PainLess/vendor/assets/stylesheets
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/chart-js-rails-0.1.2/vendor/assets/javascripts
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actioncable-5.0.2/lib/assets/compiled
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.2.0.2/assets/fonts
+  /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.2.0.2/assets/images):
+    4:     <title>Finale</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.scss:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3130464732292276499_70162665820360'
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.1ms)
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:49:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (45.8ms)
+Completed 200 OK in 6193ms (Views: 6164.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:50:12 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (44.0ms)
+Completed 200 OK in 129ms (Views: 92.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:50:19 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.7ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 2900ms (Views: 2894.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:50:51 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.5ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (19.7ms)
+Completed 200 OK in 2897ms (Views: 2891.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:50:56 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 79ms (Views: 70.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:50:58 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.5ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (4.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (75.1ms)
+Completed 200 OK in 174ms (Views: 156.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 14:51:08 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (8.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 125ms (Views: 92.8ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 14:51:09 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.5ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 91ms (Views: 84.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 14:51:09 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (4.9ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 71ms (Views: 60.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 14:51:50 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.3ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 2997ms (Views: 2990.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:51:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (39.5ms)
+Completed 200 OK in 98ms (Views: 92.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 14:52:03 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (3.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (54.7ms)
+Completed 200 OK in 146ms (Views: 136.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:52:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 2687ms (Views: 2683.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 14:52:31 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (0.8ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 74ms (Views: 48.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:52:35 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.4ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 72ms (Views: 59.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:52:49 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 2500ms (Views: 2493.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pain_activity" for ::1 at 2017-05-24 14:53:11 +0100
+Processing by PainActivityController#index as HTML
+  Rendering pain_activity/index.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores"[0m
+  [1m[36mPainscore Load (0.3ms)[0m  [1m[34mSELECT "painscores".* FROM "painscores"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "activities"[0m
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  Rendered pain_activity/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 2640ms (Views: 2636.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:53:17 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 78ms (Views: 69.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-05-24 14:53:26 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (1.0ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (8.2ms)
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-05-24 14:53:26 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (1.4ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (12.3ms)
+Completed 200 OK in 30ms (Views: 24.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:54:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 2605ms (Views: 2601.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:55:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  Rendered welcome/index.html.haml within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Self-closing tags can't have content.):
+     6:         %h2 PainLess
+     7:         %h3 Your Pain Management App
+     8:         %bu{:class => "btn btn-info"}= link_to "Log Today's Data", new_painscore_path
+     9:         %br/ %bu{:class => "btn btn-info"}= link_to 'View Potential Trigger Foods', results_path
+    10:         %bu{:class => "btn btn-info"}= link_to 'View Exertion/Pain Relationship', pain_activity_index_path
+    11:         %bu{:class => "btn btn-info"}= link_to 'View All My Data', new_stat_path
+    12:         %bu{:class => "btn btn-info"}= link_to "Logout", destroy_user_session_path, method: :delete
+  
+app/views/welcome/index.html.haml:9
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/admin030815/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.7ms)
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:55:41 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 85ms (Views: 79.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 14:57:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 68ms (Views: 63.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-05-24 14:58:34 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (6.6ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (11.6ms)
+Completed 200 OK in 37ms (Views: 22.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/stats/new" for ::1 at 2017-05-24 14:58:35 +0100
+Processing by StatsController#new as HTML
+  [1m[36mPainscore Load (1.4ms)[0m  [1m[34mSELECT foodlogs.food, foodlogs.customdate, painscores.score, activities.name, activities.exertion, painscores.notes FROM foodlogs, painscores, activities WHERE foodlogs.customdate = painscores.customdate AND painscores.customdate = activities.customdate;[0m
+  Rendering stats/new.html.haml
+  Rendered stats/new.html.haml (12.6ms)
+Completed 200 OK in 34ms (Views: 28.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 15:00:46 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (42.8ms)
+Completed 200 OK in 155ms (Views: 146.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 15:01:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 3296ms (Views: 3290.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:01:45 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (43.8ms)
+Completed 200 OK in 152ms (Views: 78.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 15:02:12 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 2690ms (Views: 2684.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/welcome/index" for ::1 at 2017-05-24 15:02:29 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 2566ms (Views: 2562.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:02:43 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 89ms (Views: 61.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:03:52 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (27.8ms)
+Completed 200 OK in 158ms (Views: 148.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:06:54 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 206ms (Views: 177.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:07:00 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 62ms (Views: 53.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:07:05 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/painscores/new" for ::1 at 2017-05-24 15:07:12 +0100
+Processing by PainscoresController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering painscores/new.html.haml within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "painscores" WHERE "painscores"."user_id" = $1 AND "painscores"."customdate" IS NULL[0m  [["user_id", 4]]
+  Rendered painscores/new.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 91ms (Views: 79.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:08:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 144ms (Views: 136.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 15:08:24 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.7ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (20.4ms)
+Completed 200 OK in 93ms (Views: 78.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 15:09:06 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.2ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 87ms (Views: 79.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 15:09:22 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.3ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 84ms (Views: 76.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 15:09:33 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (1.0ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 80ms (Views: 73.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/results" for ::1 at 2017-05-24 15:10:20 +0100
+Processing by ResultsController#index as HTML
+  [1m[36mFoodlog Load (2.1ms)[0m  [1m[34mSELECT * FROM foodlogs JOIN painscores ON (foodlogs.customdate = (painscores.customdate -1)) WHERE painscores.score = '10'[0m
+  Rendering results/index.html.haml within layouts/application
+  Rendered results/index.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 3270ms (Views: 3261.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:10:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 2951ms (Views: 2943.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:16:08 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (44.8ms)
+Completed 200 OK in 172ms (Views: 160.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:16:45 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 89ms (Views: 84.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:17:23 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 83ms (Views: 78.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:20:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 73ms (Views: 70.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:21:23 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:21:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:21:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:22:30 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:22:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:23:14 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:23:54 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 3232ms (Views: 3228.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:24:06 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 2489ms (Views: 2483.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:24:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 2668ms (Views: 2663.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:24:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:24:41 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 2708ms (Views: 2704.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:25:36 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:26:04 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 74ms (Views: 69.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:26:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 2707ms (Views: 2703.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:27:07 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 2768ms (Views: 2763.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:42:52 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (52.6ms)
+Completed 200 OK in 3526ms (Views: 3506.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:43:11 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 3039ms (Views: 3034.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:43:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 3159ms (Views: 3154.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:44:17 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 3190ms (Views: 3183.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:45:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (46.2ms)
+Completed 200 OK in 192ms (Views: 180.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:45:58 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 3284ms (Views: 3280.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:46:10 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 2970ms (Views: 2965.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:46:50 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (36.4ms)
+Completed 200 OK in 132ms (Views: 123.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:47:17 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 3374ms (Views: 3371.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:47:31 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 2603ms (Views: 2598.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:48:14 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 2826ms (Views: 2820.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:49:08 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 161ms (Views: 151.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:49:19 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:49:32 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:50:25 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 3984ms (Views: 3977.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:50:38 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 3021ms (Views: 3016.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:50:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 3252ms (Views: 3248.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:51:07 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 3178ms (Views: 3173.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:51:25 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 2859ms (Views: 2854.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:51:36 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 3310ms (Views: 3306.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:51:44 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (47.4ms)
+Completed 200 OK in 258ms (Views: 238.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:51:51 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 3504ms (Views: 3499.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:52:25 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 3384ms (Views: 3375.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:52:51 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 2593ms (Views: 2588.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:53:15 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 3331ms (Views: 3322.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:54:04 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 3004ms (Views: 2999.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:54:22 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 2699ms (Views: 2694.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:54:35 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 2760ms (Views: 2756.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-24 15:54:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.haml within layouts/application
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered welcome/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 2611ms (Views: 2599.6ms | ActiveRecord: 7.0ms)
+
+

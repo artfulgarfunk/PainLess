@@ -1,4 +1,4 @@
-%h3 WOOHOO!
+%div{:class => "container"}
 = form_for current_user do |form|
   = form.fields_for :foodlogs do |foodlog_form|
     = foodlog_form.label :date

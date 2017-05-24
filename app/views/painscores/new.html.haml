@@ -1,30 +1,31 @@
-= form_for Painscore.new do |p|
-  %h1 Please enter pain level on a scale from 1 - 10:
-  = p.label :date
-  = p.date_field :customdate
-  = p.label :score
-  = p.text_field :score, :id => "Score"
-  = p.label :notes
-  = p.text_field :notes
-  = p.submit :'Add Pain Score'
+%div{:class => "container"}
+  = form_for Painscore.new do |p|
+    %h1 Please enter pain level on a scale from 1 - 10:
+    = p.label :date
+    = p.date_field :customdate
+    = p.label :score
+    = p.text_field :score, :id => "Score"
+    = p.label :notes
+    = p.text_field :notes
+    = p.submit :'Add Pain Score'
 
-- if @painscore.errors.any?
-  %section#errors
-    %h2
-      = pluralize @painscore.errors.count, "error"
-      prohibited this painscore data from being recorded:
-    %ul
-      - @painscore.errors.full_message.each do |message|
-        %li= message
+  - if @painscore.errors.any?
+    %section#errors
+      %h2
+        = pluralize @painscore.errors.count, "error"
+        prohibited this painscore data from being recorded:
+      %ul
+        - @painscore.errors.full_message.each do |message|
+          %li= message
 
-- if @painscores.any?
-  - @painscores.each do |p|
-    %h3{:align => "center"}=p.customdate
-    %h3= p.score
-    %h3= 'Notes'
-    %h3= p.notes
-    .delete
-    = button_to 'Delete', painscore_path(p), method: :delete
-    = link_to '<button type="button">Next</button>'.html_safe, new_foodlog_path(customdate: params[:customdate]), :id => 'next'
-- else
-  %h3 No Pain Scores Currently
+  - if @painscores.any?
+    - @painscores.each do |p|
+      %h3{:align => "center"}=p.customdate
+      %h3= p.score
+      %h3= 'Notes'
+      %h3= p.notes
+      .delete
+      = button_to 'Delete', painscore_path(p), method: :delete
+      = link_to '<button type="button">Next</button>'.html_safe, new_foodlog_path(customdate: params[:customdate]), :id => 'next'
+  - else
+    %h3 No Pain Scores Currently

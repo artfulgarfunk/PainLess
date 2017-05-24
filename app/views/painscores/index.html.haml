@@ -1,6 +1,7 @@
-%h1 Pain Log
-- if @painscores.any?
-  - @painscores.each do |p|
-    %h3= p.score
-- else
-  %h3 No Pain Scores Currently
+%div{:class => "container"}
+  %h1 Pain Log
+  - if @painscores.any?
+    - @painscores.each do |p|
+      %h3= p.score
+  - else
+    %h3 No Pain Scores Currently

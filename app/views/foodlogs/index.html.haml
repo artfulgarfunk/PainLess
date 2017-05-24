@@ -1,6 +1,7 @@
-%h1 Food Log
-- if @foodlogs.any?
-  - @foodlogs.each do |f|
-    %h3= f.food
-- else
-  %h3 No Food Logged Yet
+%div{:class => "container"}
+  %h1 Food Log
+  - if @foodlogs.any?
+    - @foodlogs.each do |f|
+      %h3= f.food
+  - else
+    %h3 No Food Logged Yet

@@ -1,41 +1,42 @@
-%h1{:align => "center"} My Data:
+%div{:class => "container"}
+  %h1{:align => "center"} My Data:
 
-:css
-  table, th, td {
-      border: 1px solid grey;
-      border-collapse: collapse;
+  :css
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    h1 {
       font-family: 'Source Sans Pro', sans-serif;
-  }
+      color: black;
+    }
 
-  h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: black;
-  }
+    body {
+      text-align:center;
+    }
 
-  body {
-    text-align:center;
-  }
+  %table{:style => "width:100%"}
+    %tr
+      %th Date
+      %th Pain Score
+      %th Food
+      %th Activity
+      %th Exertion
+      %th Notes
+    - if !@painscores.empty?
+      - @painscores.each do |f|
+        %tr{:align => "center"}
+          %td= f.customdate
+          %td= f.score
+          %td= f.food
+          %td= f.name
+          %td= f.exertion
+          %td= f.notes
+    - else
+      %h1 No Results Yet
 
-%table{:style => "width:100%"}
-  %tr
-    %th Date
-    %th Pain Score
-    %th Food
-    %th Activity
-    %th Exertion
-    %th Notes
-  - if !@painscores.empty?
-    - @painscores.each do |f|
-      %tr{:align => "center"}
-        %td= f.customdate
-        %td= f.score
-        %td= f.food
-        %td= f.name
-        %td= f.exertion
-        %td= f.notes
-  - else
-    %h1 No Results Yet
-
-= link_to '<button type="button">Create PDF Report</button>'.html_safe, stats_path(format: :pdf)
-%br
-= link_to '<button type="button">Home</button>'.html_safe, welcome_index_path
+  = link_to '<button type="button">Create PDF Report</button>'.html_safe, stats_path(format: :pdf)
+  %br
+  = link_to '<button type="button">Home</button>'.html_safe, welcome_index_path
